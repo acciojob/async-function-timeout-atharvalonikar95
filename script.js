@@ -12,9 +12,9 @@ const handleOnSubmit=async()=>{
 	let msg =  msgVal.value;
 	let delay=  delayVal.value;
 	output.innerHTML = "";
+	await wait(delay)
 	const opmsg = document.createElement("p");
 	output.append(opmsg);
-	await wait(delay)
 	opmsg.textContent=  msg
 }
 
